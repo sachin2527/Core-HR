@@ -1,28 +1,32 @@
+<h1 align="center" id="title">Core-HR</h1>
 
-## Installation
+<p align="center"><img src="https://socialify.git.ci/sachin2527/Core-HR/image?description=1&amp;descriptionEditable=Human%20Resource%20Management%20System%20built%20in%20React%20JS&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Floating%20Cogs&amp;theme=Light" alt="project-image"></p>
 
-For Backend
-```bash
-  $ cd server
-  $ npm install
+<h2>🚀 Demo</h2>
+
+[https://core-hr.onrender.com/](https://core-hr.onrender.com/)
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. For back-end</p>
+
+```
+cd server && npm start
 ```
 
-For Frontend
-```bash
-  $ cd Client
-  $ npm install
+<p>2. For Front-End</p>
+
+```
+cd Client && npm start 
 ```
 
-## Execution
+  
+  
+<h2>💻 Built with</h2>
 
-For Backend
-```bash
-  $ npm start
-```
+Technologies used in the project:
 
-For Frontend
-```bash
-  $ npm start
-```
-
-    
+*   Javascript
+*   React Js
+*   Node JS
+*   Css
