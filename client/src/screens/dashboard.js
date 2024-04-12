@@ -22,10 +22,10 @@ import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import RocketOutlinedIcon from '@mui/icons-material/RocketOutlined';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
-import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
+// import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
 import CampaignRoundedIcon from '@mui/icons-material/CampaignRounded';
 import EmojiFlagsOutlinedIcon from '@mui/icons-material/EmojiFlagsOutlined';
-import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
+// import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -37,18 +37,10 @@ import ToggleOnOutlinedIcon from '@mui/icons-material/ToggleOnOutlined';
 import DonutSmallOutlinedIcon from '@mui/icons-material/DonutSmallOutlined';
 // import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
 // import DoneOutlinedIcon from '@mui/icons-material/DoneOutlined';
-import Account from './Accounts/Account';
-import NewTransaction from './Accounts/NewTransaction';
-import TransactionList from './Accounts/TransactionList';
 import Announcement from './Announcement/Announcement';
 import MyAttendance from './Attendance/MyAttendance';
 import Attendance from './Attendance/Attendance';
-import Award from './Awards/Award';
-import NewAward from './Awards/NewAward';
 import Status from './Employment/Status';
-import BalanceSheet from './Finance Report/BalanceSheet';
-import IncomeStatement from './Finance Report/IncomeStatement';
-import TrialBalance from './Finance Report/TrialBalance';
 import Department from './HR/Department';
 import Designation from './HR/Designation';
 import EmployeeList from './HR/EmployeeList';
@@ -70,9 +62,6 @@ import CompanySettings from './Setting/CompanySettings';
 import Shift from './Shift/Shift';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Admindashboard from './Admindashboard/admindashboard.js';
-import PublicHoliday from './Holiday/PublicHoliday';
-import WeeklyHoliday from './Holiday/WeeklyHoliday';
-
 
 
 const drawerWidth = 260;
@@ -84,7 +73,7 @@ function ResponsiveDrawer(props) {
 
   const Pages = [
     {
-      name: "HOME",
+      name: "Home",
       route: 'dashboard',
       icon: <HomeOutlinedIcon style={{ color: 'green' }} />,
     },
@@ -472,26 +461,26 @@ function ResponsiveDrawer(props) {
           {/* admindashboard */}
           <Route path="dashboard" element={<Admindashboard />} />
           {/* Accounts */}
-          <Route path="Account" element={<Account />} />
+          {/* <Route path="Account" element={<Account />} />
           <Route path="Accounts/NewTransaction" element={<NewTransaction />} />
-          <Route path="Accounts/TransactionList" element={<TransactionList />} />
+          <Route path="Accounts/TransactionList" element={<TransactionList />} /> */}
           {/* Announcement  */}
           <Route path="Announcement" element={<Announcement />} />
           {/* Attendance  */}
           <Route path="Attendance" element={<Attendance />} />
           <Route path="MyAttendance" element={<MyAttendance />} />
           {/* Awards */}
-          <Route path="Award" element={<Award />} />
-          <Route path="NewAward" element={<NewAward />} />
+          {/* <Route path="Award" element={<Award />} />
+          <Route path="NewAward" element={<NewAward />} /> */}
           {/* Employement */}
           <Route path="Employement/Status" element={<Status />} />
           {/* FinanceReport */}
-          <Route path="FinanceReport/BalanceSheet" element={<BalanceSheet />} />
+          {/* <Route path="FinanceReport/BalanceSheet" element={<BalanceSheet />} />
           <Route path="FinanceReport/IncomeStatement" element={<IncomeStatement />} />
-          <Route path="FinanceReport/TrialBalance" element={<TrialBalance />} />
+          <Route path="FinanceReport/TrialBalance" element={<TrialBalance />} /> */}
           {/* Holiday */}
-          <Route path="Holiday/PublicHoliday" element={<PublicHoliday />} />
-          <Route path="Holiday/WeeklyHoliday" element={<WeeklyHoliday />} />
+          {/* <Route path="Holiday/PublicHoliday" element={<PublicHoliday />} />
+          <Route path="Holiday/WeeklyHoliday" element={<WeeklyHoliday />} /> */}
           {/* HR */}
           <Route path="Department" element={<Department />} />
           <Route path="Designation" element={<Designation />} />

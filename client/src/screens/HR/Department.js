@@ -32,15 +32,15 @@ const Department = () => {
           <Typography variant='h5' style={{ marginLeft: 4, fontFamily: 'poppins', fontSize: 21, marginTop: 1.6 }}>Back</Typography>
         </Box>
       </Box>
-      <Box sx={{ backgroundColor: 'white', marginTop: 5, height: 250, width: 600, padding: 6 }}>
+      <Box sx={{ backgroundColor: 'white', marginTop: 5, padding: '1rem' }}>
         <Typography variant='h5' className='fs-5 fw-bold text-center' style={{ fontFamily: 'poppins' }}>Add Department</Typography>
-        <Box sx={{ marginLeft: 5, fontFamily: 'poppins', marginTop: 1.5 }}>
-          <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: 2 }}>
+        <Box sx={{ marginTop: 1.5 }}>
+          <Box sx={{ marginBottom: 2 }}>
             <Typography style={{ color: 'red', margin: 2 }}>*</Typography>
             <Typography variant='p'>Name:</Typography>
-            <input style={{ marginLeft: 5, width: 330, height: 35, border: 'solid 1px lightgrey', fontSize: 15, borderRadius: 5, padding: 4, backgroundColor: 'white', fontFamily: 'poppins' }} type='text' />
+            <input style={{ width: '100%', maxWidth: '330px', height: '35px', border: 'solid 1px lightgrey', fontSize: '15px', borderRadius: '5px', padding: '4px', backgroundColor: 'white', fontFamily: 'poppins' }} type='text' />
           </Box>
-          <Button style={{ backgroundColor: '#1890ff', width: 320, marginTop: 2, marginLeft: 5, color: 'white', fontFamily: 'poppins' }}>Add New Department</Button>
+          <Button style={{ width: '100%', maxWidth: '320px', marginTop: 2, backgroundColor: '#1890ff', color: 'white', fontFamily: 'poppins' }}>Add New Department</Button>
         </Box>
       </Box>
       <Box sx={{ backgroundColor: 'white', fontFamily: 'poppins', borderRadius: 3, marginTop: 5 }}>
@@ -49,7 +49,6 @@ const Department = () => {
           <BAGrid datasource={users} gridCols={cols} />
         </Box>
       </Box>
-     
     </>
   );
 }
